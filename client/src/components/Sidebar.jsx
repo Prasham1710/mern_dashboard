@@ -103,9 +103,10 @@ const Sidebar = ({
     const [active, setActive] = useState("");
     const navigate = useNavigate();
     const theme = useTheme();
-     useEffect(() => {
+    useEffect(() => {
     setActive(pathname.substring(1));
   }, [pathname]);
+  
   return (
    <Box component="nav">
     {isSidebarOpen && (
